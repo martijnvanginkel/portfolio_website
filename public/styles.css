@@ -8,13 +8,19 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Muli', sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1280px;
     height: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
     margin: 0 auto;
     background-color: pink;
 }
@@ -33,6 +39,7 @@ header {
     flex-direction: row;
 
     align-items: center;
+    margin: 0 10px;
     /* justify-self: flex-end; */
     /* justify-content: flex-end; */
 }
@@ -47,12 +54,37 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    /* justify-self: flex-start; */
-    /* justify-self: flex-end; */
+}
+
+.main_nav_name span {
+    color: lightgray;
+}
+
+.main_nav_name a {
+    color: black;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.main_nav_name a:hover {
+    color: grey;
+    transition: 0.15s;
 }
 
 .main_nav_links {
     margin-left: auto;
+}
+
+.main_nav_links a {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.main_nav_links a:hover {
+    color: grey;
+    transition: 0.2s;
 }
 /* END NAV */
 
@@ -83,10 +115,6 @@ article {
     position: relative;
 }
 
-.project_title {
-    
-}
-
 .project_img_box:hover .project_img {
     transition: 0.5s;
     opacity: 0.5;
@@ -107,8 +135,8 @@ article {
     flex-direction: row;
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    padding: 0 0 5px 5px;
+    right: 0px;
+    padding: 0 0 8px 5px;
 }
 
 .img_tag {
@@ -124,14 +152,50 @@ article {
 
 
 
-
+/* START FOOTER */
 
 footer {
+    background-color: grey;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.footer_links {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
 }
+
+.footer_menu, .footer_contact {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.copyright_link {
+
+}
+
+/* END FOOTER */
+
+
+
 
 span {
     flex-grow: 1;
 }
+
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
