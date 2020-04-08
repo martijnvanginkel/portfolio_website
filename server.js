@@ -14,4 +14,8 @@ app.get('/about', async (req, res) => {
     res.render('about');
 });
 
+app.get('/intro', async (req, res) => {
+    res.render('intro');
+});
+
 app.listen(5000);
