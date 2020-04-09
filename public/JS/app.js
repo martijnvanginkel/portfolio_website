@@ -32,22 +32,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     const header = document.getElementById('intro_header');
     const paragraph = document.getElementById('intro_paragraph');
     const link = document.getElementById('intro_link');
-    const title = "Hi I'm Martijn";
-    const sub_title = `Im a developer with a wide-range of skills. Go checkout my `;
+    const title = `Hi I'm Martijn`;
+    const sub_title = 'Im a developer with a wide-range of skills. Go checkout my';
 
     await typeWriter(title, header, 50);
     await typeWriter(sub_title, paragraph, 40);
     typeWriter('work', link, 40);
 });
 
+document.querySelector('.work_link').addEventListener('click', () => {
 
-document.querySelector('.about_link').addEventListener('click', () => {
+    if (document.querySelector('.about_link') == null) {
+        const about_me_btn = document.createElement('span');
+        about_me_btn.className = 'about_link';
+        about_me_btn.innerHTML = 'About me';
+        about_me_btn.addEventListener('click', () => {
+            const element = document.querySelector('#about_title');
 
-    const element = document.querySelector('#about_title');
-
-    window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        top: element.offsetTop
-    });   
-})
+            window.scroll({
+                behavior: 'smooth',
+                left: 0,
+                top: element.offsetTop
+            });  
+        });
+        document.querySelector('.main_nav_links').append(about_me_btn);
+    }
+});
