@@ -5,95 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="JS/app.js"></script>
     <title>Document</title>
 </head>
 <body>
 
+    <%- include('_header') %>
 
-    <main id="swup" class="transition-fade hello">
-
-        <div class="container">
-            
-            <%- include('_header') %>
-            
-                
-                <h1 class="section_title">Featured work</h1>
-                
-                <section class="projects_section">
-                    <article>
-                        <div class="project_container">
-                            <a href="#" class="project_img_box">
-                                <img src="images/word_game_thumbnail.png" alt="animated" id="word_game_thumbnail" class="project_img">
-                                <div class="img_tags">
-                                    <span class="img_tag">Vanilla JS</span>
-                                    <span class="img_tag">Node.JS</span>
-                                    <span class="img_tag">Express</span>
-                                    <span class="img_tag">JSON</span>
-                                    <span class="img_tag">API</span>
-                                </div>
-                            </a>
-                            <h2 class="project_title"><a href="#">Project 1</a></h2>
-                            <p class="project_description">Lorem Ipsum Dolor Sit Amet.</p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="project_container">
-                            <a href="#" class="project_img_box">
-                                <img src="images/placeholder.png" alt="animated" class="project_img">
-                                <div class="img_tags">
-                                    <span class="img_tag">tag</span>
-                                    <span class="img_tag">tag2</span>
-                                </div>
-                            </a>
-                            <h2 class="project_title"><a href="#">Project 1</a></h2>
-                            <p class="project_description">Lorem Ipsum Dolor Sit Amet.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="project_container">
-                            <a href="#" class="project_img_box">
-                                <img src="images/placeholder.png" alt="" class="project_img">
-                                <div class="img_tags">
-                                    <span class="img_tag">tag</span>
-                                    <span class="img_tag">tag2</span>
-                                </div>
-                            </a>
-                            <h2 class="project_title"><a href="#">Project 1</a></h2>
-                            <p class="project_description">Lorem Ipsum Dolor Sit Amet.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="project_container">
-                            <a href="#" class="project_img_box">
-                                <img src="images/placeholder.png" alt="" class="project_img">
-                                <div class="img_tags">
-                                    <span class="img_tag">tag</span>
-                                    <span class="img_tag">tag2</span>
-                                </div>
-                            </a>
-                            <h2 class="project_title"><a href="#">Project 1</a></h2>
-                            <p class="project_description">Lorem Ipsum Dolor Sit Amet.</p>
-                        </div>
-                    </article>
+    <main id="swup" class="transition-fade">      
+        <!-- <div class="container"> -->
+            <div class="intro_container">
 
 
+                <div class="intro_content">
+
+                    <h1 id="intro_header"></h1>
+                    <p id="intro_paragraph"></p>
+                    <a href="/work" id="intro_link"></a>
                     
-                </section>
+                    
+                </div>
 
-                
-                <!-- <span class="column_filler"></span> -->
-                
-                
-        </div>
-            
-        <span class="column_filler"></span>
-        
-        
-        <%- include('_footer') %>
-        
+            </div>
+        <!-- </div> -->
     </main>
 
 </body>
