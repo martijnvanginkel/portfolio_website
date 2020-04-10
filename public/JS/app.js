@@ -2,6 +2,11 @@ const swup = new Swup();
 
 /* Preload gifs */
 new Image().src = "/images/word_game_thumbnail.gif";
+new Image().src = "/images/the_journey_thumbnail.gif";
+new Image().src = "/images/pixel_farm_thumbnail.gif";
+new Image().src = "/images/2d_raycasting_thumbnail.gif";
+new Image().src = "/images/get_next_line_thumbnail.gif";
+new Image().src = "/images/cms_thumbnail.gif";
 
 
 
@@ -42,19 +47,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 document.querySelector('.work_link').addEventListener('click', () => {
 
-    if (document.querySelector('.about_link') == null) {
-        const about_me_btn = document.createElement('span');
-        about_me_btn.className = 'about_link';
-        about_me_btn.innerHTML = 'About me';
-        about_me_btn.addEventListener('click', () => {
-            const element = document.querySelector('#about_title');
+    // const element = document.querySelector('#about_title');
 
-            window.scroll({
-                behavior: 'smooth',
-                left: 0,
-                top: element.offsetTop
-            });  
-        });
-        document.querySelector('.main_nav_links').append(about_me_btn);
-    }
+    // window.scroll({
+    //     behavior: 'smooth',
+    //     left: 0,
+    //     top: element.offsetTop
+    // });  
+    // if (document.querySelector('.about_link') == null) {
+    //     const about_me_btn = document.createElement('span');
+    //     about_me_btn.className = 'about_link';
+    //     about_me_btn.innerHTML = 'About me';
+    //     about_me_btn.addEventListener('click', () => {
+    //     });
+    //     document.querySelector('.main_nav_links').append(about_me_btn);
+    // }
 });

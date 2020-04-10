@@ -10,12 +10,12 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-// app.get('/about', async (req, res) => {
-//     res.render('about');
-// });
-
 app.get('/work', async (req, res) => {
     res.render('work');
+});
+
+app.get('/weurd', async (req, res) => {
+    res.render('weurd');
 });
 
 app.listen(5000);

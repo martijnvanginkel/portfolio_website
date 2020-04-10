@@ -35,8 +35,14 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    /* height: 100%; */
-    /* background-color: blue; */
+}
+
+.project_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .intro_container {
@@ -143,22 +149,32 @@ body {
 .about_section div {
     display: flex;
     flex-direction: row;
-    margin: 10px 0;
-    flex-wrap: wrap;
+
 }
 
-/* @media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      width: 100%;
+@media screen and (max-width: 615px) {
+
+    #about_image {
+        display:none;
     }
-  } */
+
+    /* .about_section div {
+        display: flex;
+        flex-direction: column;
+
+    } */
+}
 
 #about_image {
-    max-width: 300px;
-
-
+    max-width: 250px;
+    width: auto;
+    height: auto;
 }
+
+
+
+
+
 
 #about_paragraph {
     flex: 1 1 auto;
@@ -196,15 +212,15 @@ article {
     opacity: 1;
 }
 
+
 .project_title a {
-    color: black;
+    color: grey;
     font-size: 0.8em;
     text-decoration: none;
 }
 
 .project_description {
-    padding-top: 3px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #word_game_thumbnail {
@@ -217,13 +233,56 @@ article {
     content:url("/images/word_game_thumbnail.gif");
 }
 
-#farm_game_thumbnail {
-
+#the_journey_thumbnail {
+    transition: 0.5s;
+    content:url("/images/the_journey_thumbnail.png");
 }
 
-#farm_game_thumbnail:hover {
-
+#the_journey_thumbnail:hover {
+    transition: 0.5s;
+    content:url("/images/the_journey_thumbnail.gif");
 }
+
+#pixel_farm_thumbnail {
+    transition: 0.5s;
+    content:url("/images/pixel_farm_thumbnail.png");
+}
+
+#pixel_farm_thumbnail:hover {
+    transition: 0.5s;
+    content:url("/images/pixel_farm_thumbnail.gif");
+}
+
+#raycasting_thumbnail {
+    transition: 0.5s;
+    content:url("/images/2d_raycasting_thumbnail.png");
+}
+
+#raycasting_thumbnail:hover {
+    transition: 0.5s;
+    content:url("/images/2d_raycasting_thumbnail.gif");
+}
+
+#get_next_line_thumbnail {
+    transition: 0.5s;
+    content:url("/images/get_next_line_thumbnail.png");
+}
+
+#get_next_line_thumbnail:hover {
+    transition: 0.5s;
+    content:url("/images/get_next_line_thumbnail.gif");
+}
+
+#cms_thumbnail {
+    transition: 0.5s;
+    content:url("/images/cms_thumbnail.png");
+}
+
+#cms_thumbnail:hover {
+    transition: 0.5s;
+    content:url("/images/cms_thumbnail.gif");
+}
+
 
 .project_img_box:hover .img_tag {
     transition: 0.25s;
@@ -253,11 +312,16 @@ article {
     margin-right: 5px;
     opacity: 1;
     transition: 0.25s;
+    font-size: 0.8em;
 }
 
 /* END PROJECT PAGE */
 
 
+
+.project_article_title {
+    margin-top: 10px;
+}
 
 
 
