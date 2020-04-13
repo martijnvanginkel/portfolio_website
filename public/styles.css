@@ -33,15 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.project_section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 640px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -68,7 +60,7 @@ body {
 .main_header {
 
     width: 100%;
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
     margin-bottom: 5%;
     /* padding: 5px;
@@ -149,7 +141,7 @@ body {
 .about_section div {
     display: flex;
     flex-direction: row;
-
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 615px) {
@@ -167,6 +159,7 @@ body {
 
 #about_image {
     max-width: 250px;
+    margin-right: 10px;
     width: auto;
     height: auto;
 }
@@ -312,18 +305,36 @@ article {
     margin-right: 5px;
     opacity: 1;
     transition: 0.25s;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 
 /* END PROJECT PAGE */
 
+
+.project_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
 
 
 .project_article_title {
     margin-top: 10px;
 }
 
+.project_header {
+    width: 100%;
+}
 
+.project_article {
+    margin: 0 10px;
+}
+
+.project_text {
+    margin-bottom: 10px;
+}
 
 /* START FOOTER */
 
@@ -336,7 +347,7 @@ footer {
 .footer_container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1080px;
 }
 
 .footer_links {
@@ -386,7 +397,7 @@ footer {
 
 
 
-main{
+main {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -395,17 +406,11 @@ main{
 .transition-fade {
     transition: 0.2s;
     opacity: 1;
-  }
+}
   
-  html.is-animating .transition-fade {
+html.is-animating .transition-fade {
     opacity: 0;
-  }
-
-
-/* .hello {
-    display: flex;
-    flex-direction: column;
-} */
+}
 
 .column_filler {
     flex-grow: 1;
