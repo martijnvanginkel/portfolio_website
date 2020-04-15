@@ -140,9 +140,8 @@ main {
 #about_image {
     max-width: 250px;
     margin-right: 10px;
-    /* width: 250px; */
     max-height: 180px;
-    /* height: auto; */
+    border-radius: 4px;
 }
 
 #about_paragraph {
