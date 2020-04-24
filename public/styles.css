@@ -47,7 +47,8 @@ body {
 
 /* START NAV */
 main {
-    display: flex;
+    /* display: flex; */
+    flex: 1 0 auto;
     flex-direction: column;
     height: 100%;
 }
