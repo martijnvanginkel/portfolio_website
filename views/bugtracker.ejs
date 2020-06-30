@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <script defer src="JS/app.js"></script>
+    <title>CMS</title>
+</head>
+<body>
+
+    <%- include('_header') %>
+
+    <main id="swup" class="transition-fade">
+        
+        <section class="project_section">    
+            <article class="project_article">
+                <img src="/images/bugtracker_header.png" class="project_header">
+                <h1 class="project_article_title">Bugtracker Application</h1>
+                <p class="project_text">
+                    The Javascript Bugtracker application, inspired by Trello, was created to track bugs in my development projects with a simple and straightforward user interface. In this application, users can create, edit, delete, and manipulate tasks between different columns. Additionally, users are able to collaborate on projects by inviting one another.
+
+This project showcases both my front- and back-end development skills. For the front-end, I wanted to build a single-page application in Vanilla Javascript without using a framework. This allowed me to have a more comprehensive understanding of JavaScript. For the back-end, I used Node.js and Express. I picked PostgreSQL as the database because I wanted to learn more about relational databases, implementing transactions, and executing more complicated queries. To secure the back-end, I used a JWT to protect my API.
+                </p>
+                <a href="https://github.com/martijnvanginkel/bug-tracker-app" class="github_link" target="_blank">View the code</a>
+                <a href="https://www.youtube.com/watch?v=TAhChhU84Ug" target="_blank">Screencast</a>
+            </article>
+        </section>
+    
+        <span class="column_filler"></span>
+        <%- include('_footer') %>
+    </main>
+    
+</body>
+</html>

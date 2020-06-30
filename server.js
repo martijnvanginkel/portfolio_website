@@ -21,8 +21,8 @@ app.get('/the_journey', async (req, res) => {
     res.render('the_journey');
 });
 
-app.get('/cms', async (req, res) => {
-    res.render('cms');
+app.get('/bugtracker', async (req, res) => {
+    res.render('bugtracker');
 });
 
 app.get('/get_next_line', async (req, res) => {
