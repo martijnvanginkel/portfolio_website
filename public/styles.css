@@ -37,21 +37,24 @@ body {
     margin-top: 10%;
 }
 
+.intro_content {
+    padding: 0 10px;
+}
+
 #intro_link {
     text-decoration: none;
     color: #CBD99A;
-    margin-left: 5px;
+    font-size: 1.25em;
 }
 
 .intro_paragraph_box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* START NAV */
 main {
     display: flex;
-    /* flex: 1 0 auto; */
     flex-direction: column;
     height: 100%;
 }
