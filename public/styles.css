@@ -57,6 +57,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 100%;
 }
 
 .main_header {
@@ -315,12 +316,16 @@ article {
 
 .project_article {
     margin: 0 10px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* min-height: 150%; */
+    /* flex-direction: column; */
 }
 
 .project_text {
     margin-bottom: 10px;
+    /* flex-grow: 1;
+    height: 100%;
+    min-height: 100%; */
 }
 
 /* START FOOTER */
