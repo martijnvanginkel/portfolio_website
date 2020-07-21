@@ -13,6 +13,10 @@ app.get('/work', async (req, res) => {
     res.render('work');
 });
 
+app.get('/survey_wizard', async (req, res) => {
+    res.render('survey_wizard');
+});
+
 app.get('/weurd', async (req, res) => {
     res.render('weurd');
 });

@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-grow: 0.6;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 .intro_content {
@@ -57,7 +57,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .main_header {
@@ -260,6 +260,16 @@ article {
 #bugtracker_thumbnail:hover {
     transition: 0.5s;
     content:url("/images/bugtracker_thumbnail.gif");
+}
+
+#survey_thumbnail {
+    transition: 0.5s;
+    content: url("/images/survey_thumbnail.png")
+}
+
+#survey_thumbnail:hover {
+    transition: 0.5s;
+    content:url("/images/survey_thumbnail.gif");
 }
 
 

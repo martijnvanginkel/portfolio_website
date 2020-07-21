@@ -7,9 +7,7 @@ new Image().src = "/images/pixel_farm_thumbnail.gif";
 new Image().src = "/images/2d_raycasting_thumbnail.gif";
 new Image().src = "/images/get_next_line_thumbnail.gif";
 new Image().src = "/images/bugtracker_thumbnail.gif";
-
-
-
+new Image().src = "/images/survey_thumbnail.gif";
 
 /* Typewriter effect */
 const waitForTimer = (ms) => new Promise(resolve => setTimeout(resolve, ms));
